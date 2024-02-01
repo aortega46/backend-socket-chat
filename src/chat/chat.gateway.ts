@@ -10,7 +10,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { Message } from './entities/message.entity';
 
-@WebSocketGateway(3001, { cors: { origin: '*' } })
+@WebSocketGateway({ cors: { origin: '*' } })
 export class ChatGateway
   implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect
 {
